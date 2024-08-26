@@ -6,7 +6,7 @@
   
 - 💞️ I’m looking to collaborate on anything easy such as website creation or HTML5 in general
   
-- 📫 Please don't reach put to me, I just like watching for the most part.
+- 📫 Please don't reach out to me, I just like watching for the most part.
   
 - 😄 Pronouns: he/him
   
