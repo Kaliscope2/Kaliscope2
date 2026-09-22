@@ -39,6 +39,17 @@ class TransitAccount(
 
     fun tripHistory(): List<TripSummary> = history.toList()
 
+    /**
+     * Demo-only convenience: a real card never lets the holder's own app
+     * credit balance directly — top-ups always come from a real payment
+     * flow the operator controls. Exists so this sandbox is usable without
+     * building that too.
+     */
+    fun topUpForDemo(amountCents: Long) {
+        require(amountCents > 0) { "Top-up amount must be positive" }
+        balanceCents += amountCents
+    }
+
     // nowMillis kept for symmetry with tagOn/tagOff, which are time-sensitive.
     fun status(@Suppress("UNUSED_PARAMETER") nowMillis: Long): AccountStatus = AccountStatus(
         balanceCents = balanceCents,

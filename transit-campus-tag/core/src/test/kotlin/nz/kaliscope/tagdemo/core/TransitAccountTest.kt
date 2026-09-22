@@ -105,6 +105,13 @@ class TransitAccountTest {
     }
 
     @Test
+    fun `top up for demo increases balance`() {
+        val account = TransitAccount(initialBalanceCents = 500)
+        account.topUpForDemo(1000)
+        assertEquals(1500L, account.balanceCents)
+    }
+
+    @Test
     fun `insufficient funds at tag off blocks the account`() {
         val account = TransitAccount(initialBalanceCents = 300)
         account.tagOn(TransportMode.BUS, "STOP_A", t0)

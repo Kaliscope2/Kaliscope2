@@ -1,1 +1,1 @@
-rootProject.name = "tagdemo-core"
+rootProject.name = "core"
