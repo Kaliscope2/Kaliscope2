@@ -41,6 +41,11 @@ app/    Android app. The "card": a HostApduService that emulates an NFC
 ios/    iOS app (source files, not an .xcodeproj). The "reader": a
         CoreNFC-based app that taps the Android card and shows the result,
         playing the role a bus validator or campus door reader would.
+
+wallet-pass-concept/
+        A visual mock-up of the card, installable in Apple Wallet, for
+        showing the idea to lecturers. No NFC behaviour — see its own
+        README for what it is and how to build/sign it.
 ```
 
 `core` is genuinely built and tested in this environment (27 tests,

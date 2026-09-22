@@ -1,0 +1,74 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.nz.kaliscope.tagdemo.concept",
+  "teamIdentifier": "REPLACE_WITH_YOUR_APPLE_TEAM_ID",
+  "serialNumber": "TAGDEMO-CONCEPT-0001",
+  "organizationName": "Kaliscope Tag Demo",
+  "description": "Concept: one card for transit and campus",
+
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "balance",
+        "label": "BALANCE",
+        "value": "$20.00"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "holder",
+        "label": "HOLDER",
+        "value": "Demo Student"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "transitStatus",
+        "label": "TRANSIT",
+        "value": "Not tagged on"
+      },
+      {
+        "key": "campusStatus",
+        "label": "CAMPUS ACCESS",
+        "value": "Active"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "cardType",
+        "label": "CARD TYPE",
+        "value": "Concept — not a real card"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "aboutTitle",
+        "label": "WHAT THIS IS",
+        "value": "A visual mock-up of one phone credential covering both public transport tag-on/tag-off and campus building access. It is not a real, working transit or access card — Auckland Transport and MIT would each need to provision it directly for that to be possible."
+      },
+      {
+        "key": "aboutProtocol",
+        "label": "WORKING DEMO",
+        "value": "The tag-on/tag-off fare logic and campus access rules this concept represents run for real in this project's Android (card) and iOS (reader) apps, communicating over a custom NFC protocol with AID F04B414C4953434F5045. Tap the two apps together to see it work."
+      },
+      {
+        "key": "aboutStatus",
+        "label": "STATUS",
+        "value": "Concept only — no live balance or access changes happen when this pass is tapped."
+      }
+    ]
+  },
+
+  "barcodes": [
+    {
+      "message": "KALISCOPE-TAGDEMO-CONCEPT",
+      "format": "PKBarcodeFormatQR",
+      "messageEncoding": "iso-8859-1",
+      "altText": "Concept demo — not a real fare/access credential"
+    }
+  ],
+
+  "backgroundColor": "rgb(16, 42, 67)",
+  "foregroundColor": "rgb(255, 255, 255)",
+  "labelColor": "rgb(120, 190, 200)"
+}
