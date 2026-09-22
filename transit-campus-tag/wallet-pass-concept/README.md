@@ -13,6 +13,32 @@ thing, so it's something to point at and click into during a pitch. The
 actual working tap logic lives in `../app` (Android) and `../ios`
 (iOS reader).
 
+## Evidence for lecturers: what real NFC-in-Wallet looks like
+
+Apple Wallet has a built-in, curated **Transit Card catalog**
+(Settings/Wallet → Add Card → Transit Card) of cities whose operators did
+the Express Transit deal with Apple. Every entry is a real, working
+stored-value card, not a mock-up: you add it, top it up with real money,
+and tap it on the actual gate like a physical card.
+
+| Catalog (note: no NZ / Auckland Transport entry) | Suica — add card | Suica — top up with real money |
+|---|---|---|
+| ![Apple Wallet's transit card catalog, listing Zhengzhou, Navigo (France), Octopus (Hong Kong), ICOCA/PASMO/Suica/TOICA (Japan), and more — no New Zealand entry](reference-screenshots/apple-wallet-transit-card-catalog.jpg) | ![Add Suica to Apple Wallet screen, showing a green Suica card and an Add New Card button](reference-screenshots/apple-wallet-suica-add-card.jpg) | ![Suica top-up screen showing JP¥0 with a numeric keypad to add funds](reference-screenshots/apple-wallet-suica-top-up.jpg) |
+
+Two things worth pointing at directly in a pitch:
+
+1. **This is genuinely possible** — Suica, PASMO, ICOCA, TOICA (Japan),
+   Octopus (Hong Kong), and Navigo (Paris) all work exactly the way this
+   project's original idea wanted: real balance, real top-up, real tap on
+   a real gate, all from Wallet.
+2. **It only exists because each operator partnered directly with Apple.**
+   The catalog is fixed and Apple-curated — an operator can't be added to
+   it by a developer, only by Apple approving that operator's own
+   integration. Scroll it end to end and there is no Auckland Transport,
+   no New Zealand entry at all, which is the concrete evidence (not just
+   an assertion) that this path is closed for AT and MIT unless they
+   pursue it with Apple themselves.
+
 ## What's here
 
 ```
