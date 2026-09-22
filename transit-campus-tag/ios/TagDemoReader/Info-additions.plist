@@ -1,0 +1,26 @@
+<!--
+  Xcode (14+) generates Info.plist automatically from build settings rather
+  than a checked-in file, so these two keys aren't a droppable file — add
+  them under Target -> Info -> Custom iOS Target Properties instead:
+
+    Key: NFCReaderUsageDescription (Privacy - NFC Scan Usage Description)
+    Value: This app reads the demo transit/campus card over NFC.
+
+    Key: com.apple.developer.nfc.readersession.iso7816.select-identifiers
+    Type: Array
+    Item 0: F04B414C4953434F5045
+
+  The AID above matches Apdu.aidHex in ApduProtocol.swift and must match
+  the AID declared in the Android app's res/xml/apduservice.xml exactly,
+  or the two apps won't recognize each other's tap.
+-->
+<plist version="1.0">
+<dict>
+    <key>NFCReaderUsageDescription</key>
+    <string>This app reads the demo transit/campus card over NFC.</string>
+    <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+    <array>
+        <string>F04B414C4953434F5045</string>
+    </array>
+</dict>
+</plist>

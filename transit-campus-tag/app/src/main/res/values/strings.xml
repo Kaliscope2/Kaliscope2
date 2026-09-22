@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TagDemo Card</string>
+    <string name="hce_service_description">Kaliscope tag-on/off demo card</string>
+    <string name="hce_aid_group_description">Kaliscope transit + campus demo</string>
+    <string name="balance_label">Balance</string>
+    <string name="tag_state_label">Tag state</string>
+    <string name="campus_label">Campus access</string>
+    <string name="report_lost_button">Report lost / stolen</string>
+    <string name="reinstate_button">Reinstate</string>
+    <string name="top_up_button">Top up $10.00 (demo)</string>
+</resources>
